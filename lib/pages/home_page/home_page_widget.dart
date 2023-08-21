@@ -57,7 +57,19 @@ class _HomePageWidgetState extends State<HomePageWidget> {
           top: true,
           child: Column(
             mainAxisSize: MainAxisSize.max,
-            children: [],
+            children: [
+              Expanded(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: FlutterFlowTheme.of(context).tertiary,
+                  ),
+                  child: Text(
+                    'Hello World',
+                    style: FlutterFlowTheme.of(context).bodyMedium,
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
       ),
